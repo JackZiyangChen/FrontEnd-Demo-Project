@@ -1,0 +1,96 @@
+/*can import font from external source (e.g. google)*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
+:root {
+  /*used to define custom properties*/
+  --primary-color: #007AF3 ;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  /*space outside of the element*/
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+  /*space between edge and inner elements*/
+}
+.navbar .logo {
+  /*allows nested elements within*/
+  text-decoration: none !important;
+  /*get rid of things like underline */
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  /*em = relative value*/
+}
+.navbar .logo span {
+  color: var(--primary-color);
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: gray;
+  letter-spacing: 0.3em;
+}
+.left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: 0.2em;
+}
+.left-col .primary-cta {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none !important;
+  padding: 0.5em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+.left-col .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+}
+.left-col .watch-video-cta .img {
+  margin-right: 0.5em;
+}
+.left-col .hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+a {
+  color: #444444;
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+  /*top-bottom then left-right*/
+}
+
+/*# sourceMappingURL=main.css.map */
